@@ -3,7 +3,7 @@
  *  简化接口，字符串json转换。
  * */
 
-const SALT = '__yt__admin__'
+const SALT = process.env.STORAGE_SALT || '__yt__admin__'
 
 export default {
     local: {
